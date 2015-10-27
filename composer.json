@@ -1,14 +1,14 @@
 {
-    "name": "laravel-curl",
+    "name": "xiaojiays/curl",
     "description": "Custom PHP Curl library for the Laravel 5 framework - developed by xiaojiays",
     "version": "5.1.0",
     "keywords": ["Laravel", "Curl"],
-    "homepage": "http://www.xx.com",
+    "homepage": "https://github.com/xiaojiays/curl",
     "license": "MIT",
 
     "authors": [
         {
-            "name": "yang",
+            "name": "xiaojiays",
             "email": "156720257@qq.com"
         }
     ],
