@@ -1,7 +1,7 @@
 {
     "name": "xiaojiays/curl",
     "description": "Custom PHP Curl library for the Laravel 5 framework - developed by xiaojiays",
-    "version": "5.1.0",
+    "version": "0.2.1",
     "keywords": ["Laravel", "Curl"],
     "homepage": "https://github.com/xiaojiays/curl",
     "license": "MIT",

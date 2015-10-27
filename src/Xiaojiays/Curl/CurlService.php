@@ -56,4 +56,15 @@ class CurlService
         $curl->setOption(CURLOPT_TIMEOUT_MS, $milliseconds);
         return $curl->send();
     }
+
+    public function download($url, $saveFile)
+    {
+        $curl = new Curl;
+        $curl->setOption(CURLOPT_URL, $url);
+        $response = $curl->send();
+        $fp = fopen($saveFile, 'w');
+        fwrite($fp, $response);
+        fclose($fp);
+        return true;
+    }
 }
