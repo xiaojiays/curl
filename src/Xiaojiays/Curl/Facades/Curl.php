@@ -1,4 +1,4 @@
-<?php namespace Yang\Curl\Facades;
+<?php namespace Xiaojiays\Curl\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

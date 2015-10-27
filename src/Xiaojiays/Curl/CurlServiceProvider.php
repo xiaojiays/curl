@@ -1,4 +1,4 @@
-<?php namespace Yang\Curl;
+<?php namespace Xiaojiays\Curl;
 
 use Illuminate\Support\ServiceProvider;
 
