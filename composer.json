@@ -1,0 +1,28 @@
+{
+    "name": "laravel-curl",
+    "description": "Custom PHP Curl library for the Laravel 5 framework - developed by xiaojiays",
+    "version": "5.1.0",
+    "keywords": ["Laravel", "Curl"],
+    "homepage": "http://www.xx.com",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "yang",
+            "email": "156720257@qq.com"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": ">=4.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Yang\\Curl\\": "src/"
+        }
+    },
+
+    "minimum-stability": "stable"
+}
