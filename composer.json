@@ -19,8 +19,8 @@
     },
 
     "autoload": {
-        "psr-4": {
-            "Yang\\Curl\\": "src/"
+        "psr-0": {
+            "Xiaojiays\\Curl\\": "src/"
         }
     },
 
