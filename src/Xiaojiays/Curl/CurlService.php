@@ -62,9 +62,30 @@ class CurlService
         $curl = new Curl;
         $curl->setOption(CURLOPT_URL, $url);
         $response = $curl->send();
-        $fp = fopen($saveFile, 'w');
-        fwrite($fp, $response);
-        fclose($fp);
+        $this->save($response, $saveFile);
         return true;
+    }
+
+    public function mulitGet($urls)
+    {
+        $curl = new Curl;
+        $curl->setUrls($urls);
+        return $curl->execute(); 
+    }
+
+    public function multiDownload($urls, $saveFiles)
+    {
+        $res = $this>mulitGet($urls);
+        foreach ($res as $k => $v) {
+            $this->save($v, $saveFiles[$k]);
+        }
+        return true;
+    }
+
+    private function save($data, $file)
+    {
+        $fp = fopen($file, 'w');
+        fwrite($fp, $data);
+        fclose($fp);
     }
 }
