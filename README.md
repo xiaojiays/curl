@@ -19,7 +19,7 @@ add this to the config/app.php file:
 add this to the config/app.php file:
 
     'facades' => [
-        'Curl' => Ixudra\Curl\Facades\Curl::class,
+        'Curl' => Xiaojiays\Curl\Facades\Curl::class,
     ],
 
 #Usage
